@@ -4,13 +4,196 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FF Survey</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+    <div class="container">
+        <h1>Friend Survey</h1>
+        <hr>
+        <form>
+            <h3>About You</h3>
+                <div class="form-group">
+                  <label for="friendName">Name</label>
+                  <input type="text" class="form-control" id="friendName" aria-describedby="emailHelp" placeholder="Your Name(Required)">
+                </div>
+                <div class="form-group">
+                  <label for="friendPhoto">Your Photo</label>
+                  <input type="url" class="form-control" id="friendPhoto" placeholder="Link to Your Photo(Required)">
+                </div>
+                <hr>
+            <h3>Question 1</h3>
+            <div class="form-group">
+                    <label for="question1">I would consider myself creative.</label>
+                    <select id="question1" class="form-control col-md-3">
+                      <option selected>Choose...</option>
+                      <option value = 1 >1 (Strongly Disagree)</option><option value = 2 >2</option><option value = 3>3</option><option value =4>4</option><option  value = 5>5</option><option value = 6>6</option><option value = 7>7</option><option value = 8>8</option><option value = 9>9</option><option value = 10>10 (Strongly Agree)</option>
+                    </select>
+                  </div>
+            <h3>Question 2</h3>
+            <div class="form-group">
+                    <label for="question2">I would consider myself outgoing.</label>
+                    <select id="question2" class="form-control col-md-3">
+                      <option selected>Choose...</option>
+                       <option value = 1 >1 (Strongly Disagree)</option><option value = 2 >2</option><option value = 3>3</option><option value =4>4</option><option  value = 5>5</option><option value = 6>6</option><option value = 7>7</option><option value = 8>8</option><option value = 9>9</option><option value = 10>10 (Strongly Agree)</option>
+                    </select>
+                  </div>
+            <h3>Question 3</h3>
+            <div class="form-group">
+                    <label for="question3">I like animals more than people.</label>
+                    <select id="question3" class="form-control col-md-3">
+                      <option selected>Choose...</option>
+                       <option value = 1 >1 (Strongly Disagree)</option><option value = 2 >2</option><option value = 3>3</option><option value =4>4</option><option  value = 5>5</option><option value = 6>6</option><option value = 7>7</option><option value = 8>8</option><option value = 9>9</option><option value = 10>10 (Strongly Agree)</option>
+                    </select>
+                  </div>
+            <h3>Question 4</h3>
+            <div class="form-group">
+                    <label for="question4">I would consider myself a risk taker.</label>
+                    <select id="question4" class="form-control col-md-3">
+                      <option selected>Choose...</option>
+                       <option value = 1 >1 (Strongly Disagree)</option><option value = 2 >2</option><option value = 3>3</option><option value =4>4</option><option  value = 5>5</option><option value = 6>6</option><option value = 7>7</option><option value = 8>8</option><option value = 9>9</option><option value = 10>10 (Strongly Agree)</option>
+                    </select>
+                  </div>
+            <h3>Question 5</h3>
+            <div class="form-group">
+                    <label for="question5">I would consider myself a very tidy person.</label>
+                    <select id="question5" class="form-control col-md-3">
+                      <option selected>Choose...</option>
+                       <option value = 1 >1 (Strongly Disagree)</option><option value = 2 >2</option><option value = 3>3</option><option value =4>4</option><option  value = 5>5</option><option value = 6>6</option><option value = 7>7</option><option value = 8>8</option><option value = 9>9</option><option value = 10>10 (Strongly Agree)</option>
+                    </select>
+                  </div>
+            <h3>Question 6</h3>
+            <div class="form-group">
+                    <label for="question6">I prefer to do work as in individual as opposed to working in groups</label>
+                    <select id="question6" class="form-control col-md-3">
+                      <option selected>Choose...</option>
+                       <option value = 1 >1 (Strongly Disagree)</option><option value = 2 >2</option><option value = 3>3</option><option value =4>4</option><option  value = 5>5</option><option value = 6>6</option><option value = 7>7</option><option value = 8>8</option><option value = 9>9</option><option value = 10>10 (Strongly Agree)</option>
+                    </select>
+                  </div>
+            <h3>Question 7</h3>
+            <div class="form-group">
+                    <label for="question7">I would consider myself athletic.</label>
+                    <select id="question7" class="form-control col-md-3">
+                      <option selected>Choose...</option>
+                       <option value = 1 >1 (Strongly Disagree)</option><option value = 2 >2</option><option value = 3>3</option><option value =4>4</option><option  value = 5>5</option><option value = 6>6</option><option value = 7>7</option><option value = 8>8</option><option value = 9>9</option><option value = 10>10 (Strongly Agree)</option>
+                    </select>
+                  </div>
+            <h3>Question 8</h3>
+            <div class="form-group">
+                    <label for="question8">I prefer watching movies over plaing video games.</label>
+                    <select id="question8" class="form-control col-md-3">
+                      <option selected>Choose...</option>
+                       <option value = 1 >1 (Strongly Disagree)</option><option value = 2 >2</option><option value = 3>3</option><option value =4>4</option><option  value = 5>5</option><option value = 6>6</option><option value = 7>7</option><option value = 8>8</option><option value = 9>9</option><option value = 10>10 (Strongly Agree)</option>
+                    </select>
+                  </div>
+            <h3>Question 9</h3>
+            <div class="form-group">
+                    <label for="question9">Tacos are better than pizza.</label>
+                    <select id="question9" class="form-control col-md-3">
+                      <option selected>Choose...</option>
+                       <option value = 1 >1 (Strongly Disagree)</option><option value = 2 >2</option><option value = 3>3</option><option value =4>4</option><option  value = 5>5</option><option value = 6>6</option><option value = 7>7</option><option value = 8>8</option><option value = 9>9</option><option value = 10>10 (Strongly Agree)</option>
+                    </select>
+                  </div>
+            <h3>Question 10</h3>
+            <div class="form-group">
+                    <label for="question10">DC is better than Marvel.</label>
+                    <select id="question10" class="form-control col-md-3">
+                      <option selected>Choose...</option>
+                       <option value = 1 >1 (Strongly Disagree)</option><option value = 2 >2</option><option value = 3>3</option><option value =4>4</option><option  value = 5>5</option><option value = 6>6</option><option value = 7>7</option><option value = 8>8</option><option value = 9>9</option><option value = 10>10 (Strongly Agree)</option>
+                    </select>
+                  </div>
+                <button type="submit" class="btn btn-primary btn-block" id="submit"><span class="fa fa-check-square"></span> Submit</button>
+              </form>
+    </div>
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Click To See Your New Bestie</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Your New Bestie</h4>
+        </div>
+        <div class="modal-body">
+          <div id="bestieName"></div>
+          <img id="bestiePhoto">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
     
 </body>
 <script src="https://code.jquery.com/jquery.js"></script>
+<script>
+// var friendInput = [];
+
+$("#submit").on("click", function(event) {
+    event.preventDefault();
+
+     var friendInput = {
+        name: $("#friendName").val().trim(),
+        photo: $("#friendPhoto").val().trim(),
+        scores:[ 
+        $("#question1").val().trim(),
+        $("#question2").val().trim(),
+        $("#question3").val().trim(),
+        $("#question4").val().trim(),
+        $("#question5").val().trim(),
+        $("#question6").val().trim(),
+        $("#question7").val().trim(),
+        $("#question8").val().trim(),
+        $("#question9").val().trim(),
+        $("#question10").val().trim()
+     ]
+};
+
+console.log(friendInput);
+
+$.post("/api/friends", friendInput, function(data){
+   if (data){
+       bestFriend();
+       console.log("Done");
+   }
+   else {
+       console.log("Error!");
+   }
+});
+
+});
+
+function bestFriend (friendInput){
+    $.ajax({ url: "/api/friends", method: "GET" })
+    .then( function(friendArray){
+        var scoresArray = [];
+        var friendScore = 0;
+        var inputInfo = friendArray.length - 1;
+
+        for (var  i = 0; i<friendArray.length - 1; i++){
+            for ( var x = 0; x<friendArray[i].scores.length; x++){
+                friendScore += Math.abs(friendArray[inputInfo].scores[x] - friendArray[i].scores[x])
+            }
+            scoresArray.push(friendScore);
+            friendScore = 0;
+        }
+        var bestMatch = scoresArray.indexOf(Math.min(...scoresArray));
+        console.log(friendArray[bestMatch]);
+
+        $("#bestieName").text(friendArray[bestMatch].name + " is your new BFF!!");
+        $("#bestiePhoto").attr("src", friendArray[bestMatch].photo);
+        // $('#myModal').modal('show');
+    }
+
+    )
+};
+
+</script>
 </html>
